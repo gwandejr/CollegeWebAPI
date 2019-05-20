@@ -1,0 +1,66 @@
+﻿@model CollegeDBEF.Models.Scores
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Scores</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ScoreTypeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScoreTypeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAssigned)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAssigned)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateDue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateDue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSubmitted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateSubmitted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PointsEarned)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PointsEarned)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PointsPossible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PointsPossible)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
